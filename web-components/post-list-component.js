@@ -18,12 +18,6 @@ class PostListComponent extends HTMLElement{
     })
     }
 
-    // fetch('https://www.reddit.com/r/aww/new.json')
-    // .then(resp => resp.json())
-    // .then(res => {
-    //     const data = res.data;
-    //     const posts = data.children;
-    // })
 
     disconnectedCallback(){
         
@@ -32,19 +26,6 @@ class PostListComponent extends HTMLElement{
 
 
     render(posts){
-
-        // this.shadowRoot.innerHTML = '';
-        // const ul = document.createElement('ul');
-        // this.shadowRoot.appendChild(ul);
-
-        // for (let i = 0; i < posts.length; i++) {
-        //     const post = posts[i];
-            
-        //     const li = document.createElement('li');
-        //     li.appendChild(document.createTextNode(post.title));
-
-        //     ul.appendChild(li);
-        // }
 
         this.shadowRoot.innerHTML = '';
         const mainContainer = document.createElement('div');

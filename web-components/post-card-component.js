@@ -31,6 +31,12 @@ class PostCardComponent extends HTMLElement{
                 padding: 16px;
                 margin-bottom: 4px;
             }
+
+            .card img{
+                width:60%;
+                border-radius:20px;
+            }
+
             .card-title{
                 font-size: x-large;
                 font-weight: bold;
