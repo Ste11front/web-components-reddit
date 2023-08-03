@@ -22,3 +22,28 @@ function changeTitleColor(){
 // usare i web component
 
 // 1) permettere all'utente di cambiare il tema
+
+
+function toHumanTime(timestamp) {    // funzione per convertire orario
+
+    const timestampInMills = timestamp * 1000;
+    const now = Date.now();
+    const delta = now - timestampInMills;
+
+    const seconds = parseInt(delta / 1000);
+    if (seconds < 60) {
+        return seconds + ' secondi fa...';
+    }
+
+    const minutes = parseInt(seconds / 60);
+    if (minutes < 60) {
+        return minutes + ' minuti fa...';
+    }
+
+    const hours = parseInt(minutes / 60);
+    if (hours < 24) {
+        return hours + ' ore fa...';
+    }
+    
+    return parseInt(hours / 24) + ' giorni fa...';
+}

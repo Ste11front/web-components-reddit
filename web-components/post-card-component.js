@@ -33,7 +33,7 @@ class PostCardComponent extends HTMLElement{
             }
 
             .card img{
-                width:60%;
+                width:12%;
                 border-radius:20px;
             }
 
