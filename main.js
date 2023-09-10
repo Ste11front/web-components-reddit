@@ -1,20 +1,3 @@
-// es. creare una pagina web che permetta di visualizzare gli ultimi 25 post del subreddit /aww (https://www.reddit.com/r/aww/new.json)
-
-// Reddit viewer:
-// - all'avvio (se non ho mai visitato il sito) presenterà la dialog di selezione dei subreddit dove potrò scegliere tra una decina di subreddit (obbligatorio almeno uno)
-// - la pagina principale mostrerà toolbar con un bottone per ogni subreddit selezionato che permetterà di scegliere quali post vedere
-// - tasto + che permetta di riaprire la dialog e aggiungere/cambiare i subreddit
-// - cura l'estetica
-
-// Funzionalità aggiuntive:
-// - aggiungere alla dialog la possibilità di aggiungere subreddit non previsti nella lista tramite un input di tipo testo
-// - aggiungere la possibilità di cambiare tra (new, hot, pop)
-
-// Super task:
-// - gestire la paginazione
-// - trasformare l'app in un gestore di rss
-
-
 function changeTitleColor(){
     const header = document.getElementById('header');
     // header.setAttribute('title-color', 'pink')
