@@ -4,7 +4,7 @@
 // - all'avvio (se non ho mai visitato il sito) presenterà la dialog di selezione dei subreddit dove potrò scegliere tra una decina di subreddit (obbligatorio almeno uno)
 // - la pagina principale mostrerà toolbar con un bottone per ogni subreddit selezionato che permetterà di scegliere quali post vedere
 // - tasto + che permetta di riaprire la dialog e aggiungere/cambiare i subreddit
-// - farlo bello!!! (estetica)
+// - cura l'estetica
 
 // Funzionalità aggiuntive:
 // - aggiungere alla dialog la possibilità di aggiungere subreddit non previsti nella lista tramite un input di tipo testo

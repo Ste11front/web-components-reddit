@@ -77,10 +77,7 @@ class PostCardComponent extends HTMLElement{
         const customEvent = new CustomEvent('card-clicked', {detail: this.post.title});
         this.dispatchEvent(customEvent);
     }
-
-
-
+    
 }
-
 
 customElements.define('post-card', PostCardComponent);

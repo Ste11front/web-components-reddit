@@ -18,12 +18,9 @@ class PostListComponent extends HTMLElement{
     })
     }
 
-
     disconnectedCallback(){
         
     }
-
-
 
     render(posts){
 
@@ -50,9 +47,6 @@ class PostListComponent extends HTMLElement{
         this.render(this.postsArray);
     }
 
-
-
 }
-
 
 customElements.define('posts-list', PostListComponent);

@@ -13,18 +13,13 @@ class SuperHeaderComponent extends HTMLElement { // definisce che questa classe 
 
         this.render()
 
-
-
     }
 
     render() {
 
-
-
         this.shadowRoot.innerHTML = `
         <style>
 
-       
         .header{
             
             display: flex;
@@ -92,10 +87,6 @@ class SuperHeaderComponent extends HTMLElement { // definisce che questa classe 
         // const style = document.createElement('style');
         // //style.innerHTML = `h1{color: ${this.getAttribute('title-color')}}`;
         // this.shadowRoot.appendChild(style);
-
-
-
-
 
     }
 

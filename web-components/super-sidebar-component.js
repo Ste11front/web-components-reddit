@@ -1,34 +1,24 @@
-
-
-
 class SuperSidebarComponent extends HTMLElement { // definisce che questa classe sia estesa all'html
 
-    constructor() {
-        super();
+  constructor() {
+    super();
 
-        this.attachShadow({ mode: 'open' }) //shadowroot gestisce quello che in js standard è il document 
-    }
+    this.attachShadow({ mode: 'open' }) //shadowroot gestisce quello che in js standard è il document 
+  }
 
+  connectedCallback() {
 
+    this.render()
 
+  }
 
-    connectedCallback() {
+  render() {
 
-        this.render()
-
-
-
-    }
-
-    render() {
-
-
-        this.shadowRoot.innerHTML = `
+    this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./style-sidebar.css"> 
         
         `
-        this.shadowRoot.innerHTML += `
-        
+    this.shadowRoot.innerHTML += `
         
         <section class="app">
         <aside class="sidebar">
@@ -157,21 +147,20 @@ class SuperSidebarComponent extends HTMLElement { // definisce che questa classe
         </aside>
       </section>`
 
+  }
+
+  //queste due funzioni vanno sempre in coppia. uno osserva i cambiamenti degli attributi e l'altro li mette in pratica renderizzando la pagina
+  attributeChangedCallback(name, oldValue, newValue) {
+
+    if (oldValue !== newValue) {
+      this.render()
 
     }
+  }
 
-    //queste due funzioni vanno sempre in coppia. uno osserva i cambiamenti degli attributi e l'altro li mette in pratica renderizzando la pagina
-    attributeChangedCallback(name, oldValue, newValue) {
-
-        if (oldValue !== newValue) {
-            this.render()
-
-        }
-    }
-
-    static get observedAttributes() {
-        return ['title-color', 'super-title']
-    }
+  static get observedAttributes() {
+    return ['title-color', 'super-title']
+  }
 }
 
 customElements.define('super-sidebar', SuperSidebarComponent); //definisce che questa classe venga associata all element creato da me
